@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/zsh
 set -e
 echo "Unmounting iPhone..."
-fusermount -u /media/iPhone
+/usr/bin/fusermount -u /media/$USER/iPhone
 echo "Unpairing iPhone..."
-idevicepair unpair
+/usr/local/bin/idevicepair unpair
 echo "Done!"

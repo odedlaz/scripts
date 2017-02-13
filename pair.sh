@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/zsh
 set -e
 echo "Pairing iPhone..."
-idevicepair pair
+/usr/local/bin/idevicepair pair
 echo "Mounting iPhone..."
-ifuse /media/iPhone
+/usr/local/bin/ifuse /media/$USER/iPhone
 echo "Done!"
